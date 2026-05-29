@@ -1,0 +1,15 @@
+{
+  "name": "game-algorithm-src",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Algorithm Simulator Suite</title>
+    <style>
+        body { 
+            background: #0f0f14; 
+            color: #fff;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #appContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        #btnContainer {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        button {
+            background: #1a1a24;
+            color: #888;
+            border: 1px solid #333;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #252535;
+            color: #fff;
+            border-color: #555;
+        }
+        button.active {
+            background: #00ffcc;
+            color: #0f0f14;
+            border-color: #00ffcc;
+            box-shadow: 0 0 12px rgba(0, 255, 204, 0.4);
+        }
+        canvas { 
+            border: 2px solid #222; 
+            background: #000; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            border-radius: 4px;
+        }
+        .info {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="appContainer">
+        <div id="btnContainer"></div>
+        <canvas id="simCanvas"></canvas>
+        <div class="info">※ 画面クリックでシミュレーションをリアルタイムにリセット・干渉できます</div>
+    </div>
+    <script src="./main.ts" type="module"></script>
+</body>
+</html>
